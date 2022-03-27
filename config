@@ -1,0 +1,7 @@
+server_host_ipv4 10.0.0.159
+internal_host_ipv4 10.0.0.131
+server_host_ipv6 2604:3d08:8384:8300:e6bd:23c0:941f:94df
+internal_host_ipv6 2604:3d08:8384:8300:bb07:6eec:d629:bd85
+8000 8000
+2222 22
+4000 20000
