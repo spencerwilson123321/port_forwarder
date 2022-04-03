@@ -1,0 +1,12 @@
+
+
+1. The server receives the initial connection. accept()
+2. Inspect the source port of the connection request --> Use this to determine what port to connect to on the 'internal' host.
+3. Create the connection to the internal host from the port forwarder host.
+4. Create 2 threads which wait on both sockets -->
+    When the external socket gets data it needs to go to the internal host through the internal socket.
+    When the internal socket gets data it needs to go to the external host through the external socket.
+    Just make sure to put something in place so that sockets don't try to get accessed at the exact same time. Lock, or something else.
+5. Once those threads are started, go back to the main loop which will start from step 1 and wait for a new connection.
+
+
